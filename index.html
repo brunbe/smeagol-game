@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sméagol's Precious</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <h1>Sméagol's Precious</h1>
+    <p id="subtitle">Collect all the rings — but beware the Eye of Sauron!</p>
+
+    <div id="hud">
+      <span id="score-display">Precious collected: <strong id="score">0</strong></span>
+      <span id="lives-display">Lives: <strong id="lives">3</strong></span>
+      <span id="level-display">Level: <strong id="level">1</strong></span>
+    </div>
+
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+    <div id="message" class="hidden">
+      <h2 id="message-title"></h2>
+      <p id="message-body"></p>
+      <button id="message-btn">Play Again</button>
+    </div>
+
+    <div id="instructions">
+      <strong>Controls:</strong> Arrow keys or WASD to move &nbsp;|&nbsp;
+      Collect <span class="ring-color">◈ rings</span> &nbsp;|&nbsp;
+      Avoid <span class="eye-color">👁 the Eye</span>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
